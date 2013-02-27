@@ -18,6 +18,12 @@ h1, h2, h3, h4, h5, h6 {
 header {
 	border-bottom: 3px solid #36b1bf;
 }
+header * {
+	float: left; padding-right: 1em; margin: 0;
+}
+header p {
+	font-size: 14px;
+}
 footer {
 	border-top: 3px solid #36b1bf;
 }
