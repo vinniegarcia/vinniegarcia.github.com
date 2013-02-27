@@ -1,0 +1,23 @@
+
+body {
+	color: #484848;
+	background: #f6f6f6;
+	font: 18px/29px Muli, Avenir, Verdana, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Istok Web", Helvetica, Arial, sans-serif;
+	color: #36b1bf;
+}
+
+#main {
+	margin: auto;
+	width: 90%;
+}
+
+header {
+	border-bottom: 3px solid #36b1bf;
+}
+footer {
+	border-top: 3px solid #36b1bf;
+}
