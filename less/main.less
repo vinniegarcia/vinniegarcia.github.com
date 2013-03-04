@@ -61,7 +61,7 @@
 
 .nav-link {
 	background-color: @lighterBlue;
-	color: white;
+	color: white !important;
 	text-decoration: none;
 	padding: .25em 1em;
 	&:hover {
@@ -124,11 +124,12 @@ nav {
 	background-color: @lighterBlue;
 	border: solid @darkerBlue;
 	border-width: 1px 0;
+	font-weight: @boldWeight;
 	ul {
 		a {
 			.nav-link;
 		}
-		font-weight: @boldWeight;
+		
 		list-style: none;
 		margin: 0; padding: 0;
 	}
