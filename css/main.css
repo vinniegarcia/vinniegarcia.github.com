@@ -48,7 +48,7 @@ h6 {
 }
 
 a {
-  color: #a0cf84;
+  color: #98d7e0;
   -webkit-transition: all 0.25s ease-in;
      -moz-transition: all 0.25s ease-in;
       -ms-transition: all 0.25s ease-in;
@@ -57,7 +57,7 @@ a {
 }
 
 a:hover {
-  color: #5e983b;
+  color: #55838a;
 }
 
 header {
