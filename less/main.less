@@ -9,7 +9,7 @@
 @linkColor: #a0cf84;
 @linkHover: darken(@linkColor, 25%);
 @lighterBlue: #acc8cc;
-@darkerBlue: darken(@lighterBlue, 50%);
+@darkerBlue: darken(@lighterBlue, 30%);
 
 /* Mixin */
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -36,6 +36,22 @@
     background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
     background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
     background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+
+// Display a list of links horizontally (CB) 
+.horizontal (@dir: left) {
+	ul, ol {
+		display: block;
+		margin: 0;
+	}
+	li {
+		display: inline;
+		float: @dir;
+	}
+	a {
+		display: block;
+		float: @dir;
+	}
 }
 
 body {
@@ -73,6 +89,15 @@ header {
 	}
 	p {
 		font-size: @smallFontSize;
+	}
+}
+nav {
+	ul {
+		.horizontal(left);
+		background-color: @darkerBlue;
+		color: white;
+		font-weight: bold;
+		list-style: none;
 	}
 }
 footer {
