@@ -7,6 +7,7 @@
 @darkerBlue: darken(@lighterBlue, 30%);
 @baseFontSize: 18px;
 @smallFontSize: 14px;
+@bigFontSize: 24px;
 @baseFontWeight: 300;
 @baseLineHeight: 1.6;
 @baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
@@ -150,6 +151,10 @@ p {
 				display: block;
 				a {
 					float: none;
+					font-size: @bigFontSize;
+					line-height: @baseLineHeight;
+					display: block;
+					text-align: center;
 				}
 			}
 		}
