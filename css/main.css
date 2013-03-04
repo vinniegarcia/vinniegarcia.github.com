@@ -117,3 +117,12 @@ footer {
 p {
   margin: 0 0 1.5em;
 }
+
+@media all and (max-width: 720px) {
+  header {
+    margin-top: 0;
+  }
+  #main {
+    padding: 0;
+  }
+}
