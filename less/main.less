@@ -2,9 +2,12 @@
 @headingColor: #36b1bf;
 @backgroundColor: #f6f6f6;
 @baseFontSize: 18px;
+@smallFontSize: 14px;
 @baseLineHeight: 1.6;
 @baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
 @headingFont: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@linkColor: #a0cf84;
+@linkHover: saturate(#a0cf84, 25%);
 
 body {
 	color: @textColor;
@@ -23,18 +26,27 @@ h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 	max-width: 55em;
 }
+a {
+	color: @linkColor;
 
+	&:hover {
+		color: @linkHover;
+	}
+}
 header {
-	border-bottom: 3px solid @headingColor;
+	border-bottom: 2px solid @headingColor;
 	overflow: auto;
 	margin-top: 2em;
 }
-header * {
-	margin: 0;
-}
-header p {
-	font-size: 14px;
+header {
+	* {
+		margin: 0;
+	}
+	p {
+		font-size: @smallFontSize;
+	}
 }
 footer {
-	border-top: 3px solid @headingColor;
+	border-top: 2px solid @headingColor;
+	font-size: @smallFontSize;
 }

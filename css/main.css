@@ -21,10 +21,18 @@ h6 {
   margin: auto;
 }
 
+a {
+  color: #a0cf84;
+}
+
+a:hover {
+  color: #9be46f;
+}
+
 header {
   margin-top: 2em;
   overflow: auto;
-  border-bottom: 3px solid #36b1bf;
+  border-bottom: 2px solid #36b1bf;
 }
 
 header * {
@@ -36,5 +44,6 @@ header p {
 }
 
 footer {
-  border-top: 3px solid #36b1bf;
+  font-size: 14px;
+  border-top: 2px solid #36b1bf;
 }
