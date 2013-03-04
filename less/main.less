@@ -1,15 +1,17 @@
 @textColor: #484848;
 @headingColor: #36b1bf;
 @backgroundColor: #f6f6f6;
-@baseFontSize: 18px;
-@smallFontSize: 14px;
-@baseLineHeight: 1.6;
-@baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
-@headingFont: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @linkColor: #a0cf84;
 @linkHover: darken(@linkColor, 25%);
 @lighterBlue: #acc8cc;
 @darkerBlue: darken(@lighterBlue, 30%);
+@baseFontSize: 18px;
+@smallFontSize: 14px;
+@baseFontWeight: 300;
+@baseLineHeight: 1.6;
+@baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
+@headingFont: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 
 /* Mixin */
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -58,6 +60,7 @@ body {
 	color: @textColor;
 	background: @backgroundColor;
 	font-size: @baseFontSize;
+	font-weight: @baseFontWeight;
 	font-family: @baseFont;
 	line-height: @baseLineHeight;
 }
