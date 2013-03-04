@@ -1,0 +1,40 @@
+@textColor: #484848;
+@headingColor: #36b1bf;
+@backgroundColor: #f6f6f6;
+@baseFontSize: 18px;
+@baseLineHeight: 1.6;
+@baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
+@headingFont: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+	color: @textColor;
+	background: @backgroundColor;
+	font-size: @baseFontSize;
+	font-family: @baseFont;
+	line-height: @baseLineHeight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headingFont;
+	color: @headingColor;
+}
+
+#wrapper {
+	margin: auto;
+	max-width: 55em;
+}
+
+header {
+	border-bottom: 3px solid @headingColor;
+	overflow: auto;
+	margin-top: 2em;
+}
+header * {
+	margin: 0;
+}
+header p {
+	font-size: 14px;
+}
+footer {
+	border-top: 3px solid @headingColor;
+}
