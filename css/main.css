@@ -13,7 +13,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #36b1bf;
+  color: #2e474b;
 }
 
 #wrapper {
@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-  color: #9be46f;
+  color: #5e983b;
 }
 
 header {

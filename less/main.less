@@ -7,7 +7,9 @@
 @baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
 @headingFont: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @linkColor: #a0cf84;
-@linkHover: saturate(#a0cf84, 25%);
+@linkHover: darken(@linkColor, 25%);
+@lighterBlue: #acc8cc;
+@darkerBlue: darken(@lighterBlue, 50%);
 
 body {
 	color: @textColor;
@@ -19,7 +21,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: @headingFont;
-	color: @headingColor;
+	color: @darkerBlue;
 }
 
 #wrapper {
