@@ -54,6 +54,7 @@ header p {
 
 nav {
   overflow: auto;
+  background-color: #acc8cc;
 }
 
 nav ul,
@@ -79,12 +80,12 @@ nav ul {
 
 nav ul a {
   color: white;
-  background-color: #55838a;
+  background-color: #acc8cc;
 }
 
 nav ul a:hover {
   color: #ffc;
-  background-color: #acc8cc;
+  background-color: #55838a;
 }
 
 footer {
