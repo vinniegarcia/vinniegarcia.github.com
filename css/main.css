@@ -144,6 +144,10 @@ p {
   display: none;
 }
 
+#hide-link {
+  display: none;
+}
+
 @media all and (max-width: 720px) {
   header {
     padding: 0;
@@ -183,6 +187,9 @@ p {
   #menu-link:hover {
     color: #ffc;
     background-color: #55838a;
+  }
+  #hide-link {
+    display: block;
   }
   #nav-list {
     height: 0;
