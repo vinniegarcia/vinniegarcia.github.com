@@ -14,6 +14,14 @@
   background-color: #55838a;
 }
 
+.mobile-nav-link {
+  display: block;
+  float: none;
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+}
+
 body {
   font-family: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
   font-size: 18px;
@@ -163,8 +171,12 @@ p {
   }
   #menu-link {
     display: block;
+    float: none;
     padding: .25em 1em;
+    font-size: 24px;
+    line-height: 1.6;
     color: white;
+    text-align: center;
     text-decoration: none;
     background-color: #acc8cc;
   }

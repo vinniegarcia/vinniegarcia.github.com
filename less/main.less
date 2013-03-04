@@ -68,6 +68,14 @@
 	}
 }
 
+.mobile-nav-link {
+	float: none;
+	font-size: @bigFontSize;
+	line-height: @baseLineHeight;
+	display: block;
+	text-align: center;
+}
+
 body {
 	color: @textColor;
 	background: @backgroundColor;
@@ -154,11 +162,7 @@ p {
 				float: none;
 				display: block;
 				a {
-					float: none;
-					font-size: @bigFontSize;
-					line-height: @baseLineHeight;
-					display: block;
-					text-align: center;
+					.mobile-nav-link;
 				}
 			}
 		}
@@ -166,6 +170,7 @@ p {
 	#menu-link {
 		display: block;
 		.nav-link;
+		.mobile-nav-link;
 	}
 	#nav-list {
 		height: 0;
