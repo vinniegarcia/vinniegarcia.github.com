@@ -42,7 +42,6 @@ a:hover {
 header {
   margin-top: 2em;
   overflow: auto;
-  border-bottom: 2px solid #36b1bf;
 }
 
 header * {
@@ -56,6 +55,8 @@ header p {
 nav {
   overflow: auto;
   background-color: #acc8cc;
+  border: solid #55838a;
+  border-width: 1px 0;
 }
 
 nav ul,
@@ -80,7 +81,7 @@ nav ul {
 }
 
 nav ul a {
-  padding: .25em 1em .25em 2em;
+  padding: .25em 1em;
   color: white;
   background-color: #acc8cc;
 }
@@ -101,5 +102,5 @@ nav ul a:hover {
 
 footer {
   font-size: 14px;
-  border-top: 2px solid #36b1bf;
+  border-top: 1px solid #55838a;
 }
