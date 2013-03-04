@@ -131,4 +131,14 @@ p {
   footer {
     padding: 0;
   }
+  nav ul {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    float: none;
+  }
+  nav ul li a {
+    float: none;
+  }
 }
