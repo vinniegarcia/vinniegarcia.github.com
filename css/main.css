@@ -14,6 +14,10 @@
   background-color: #55838a;
 }
 
+.nav-link:visited {
+  color: white;
+}
+
 .mobile-nav-link {
   display: block;
   float: none;
@@ -75,7 +79,9 @@ header * {
 }
 
 header span {
+  margin: 0;
   font-size: 14px;
+  line-height: 1.0;
 }
 
 nav {
@@ -118,6 +124,10 @@ nav ul a {
 nav ul a:hover {
   color: #ffc;
   background-color: #55838a;
+}
+
+nav ul a:visited {
+  color: white;
 }
 
 #main {
@@ -191,6 +201,9 @@ p {
   #menu-link:hover {
     color: #ffc;
     background-color: #55838a;
+  }
+  #menu-link:visited {
+    color: white;
   }
   #hide-link {
     display: block;
