@@ -76,13 +76,14 @@ nav a {
 }
 
 nav ul {
-  font-weight: bold;
+  font-weight: 400;
   list-style: none;
 }
 
 nav ul a {
   padding: .25em 1em;
   color: white;
+  text-decoration: none;
   background-color: #acc8cc;
 }
 

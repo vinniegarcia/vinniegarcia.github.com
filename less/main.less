@@ -11,7 +11,7 @@
 @baseLineHeight: 1.6;
 @baseFont: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
 @headingFont: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+@boldWeight: 400;
 
 /* Mixin */
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -102,13 +102,14 @@ nav {
 		a {
 			background-color: @lighterBlue;
 			color: white;
+			text-decoration: none;
 			padding: .25em 1em;
 			&:hover {
 				background-color: @darkerBlue;
 				color: #ffc;
 			}
 		}
-		font-weight: bold;
+		font-weight: @boldWeight;
 		list-style: none;
 	}
 }
