@@ -120,6 +120,10 @@ p {
   margin: 0 0 1.5em;
 }
 
+#menu-link {
+  display: none;
+}
+
 @media all and (max-width: 720px) {
   header {
     padding: 0;
@@ -144,5 +148,19 @@ p {
     font-size: 24px;
     line-height: 1.6;
     text-align: center;
+  }
+  #menu-link {
+    display: block;
+  }
+  #nav-list {
+    display: none;
+    -webkit-transition: all 0.3s ease-in;
+       -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+         -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+  }
+  #nav-list:target {
+    display: block;
   }
 }

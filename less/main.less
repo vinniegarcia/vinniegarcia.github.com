@@ -131,7 +131,7 @@ footer {
 p {
 	margin: 0 0 1.5em;
 }
-
+#menu-link { display: none; }
 @media all and (max-width: 720px) {
 	header {
 		margin-top: 0;
@@ -157,6 +157,16 @@ p {
 					text-align: center;
 				}
 			}
+		}
+	}
+	#menu-link {
+		display: block;
+	}
+	#nav-list {
+		display: none;
+		.transition(all, 0.3s, ease-in);
+		&:target {
+			display: block;
 		}
 	}
 }
