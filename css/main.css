@@ -74,9 +74,17 @@ nav a {
 
 nav ul {
   font-weight: bold;
-  color: white;
   list-style: none;
+}
+
+nav ul a {
+  color: white;
   background-color: #55838a;
+}
+
+nav ul a:hover {
+  color: #55838a;
+  background-color: #acc8cc;
 }
 
 footer {

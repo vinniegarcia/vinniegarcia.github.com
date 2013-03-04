@@ -95,9 +95,14 @@ nav {
 	overflow: auto;
 	.horizontal(left);
 	ul {
-		
-		background-color: @darkerBlue;
-		color: white;
+		a {
+			background-color: @darkerBlue;
+			color: white;
+			&:hover {
+				background-color: @lighterBlue;
+				color: @darkerBlue;
+			}
+		}
 		font-weight: bold;
 		list-style: none;
 	}
