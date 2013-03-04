@@ -93,6 +93,10 @@ nav ul a:hover {
   background-color: #55838a;
 }
 
+#main {
+  margin-bottom: 3em;
+}
+
 #main h1,
 #main h2,
 #main h3,
@@ -103,7 +107,6 @@ nav ul a:hover {
 }
 
 footer {
-  margin-top: 2em;
   font-size: 14px;
   border-top: 1px solid #55838a;
 }
