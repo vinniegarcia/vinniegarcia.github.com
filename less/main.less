@@ -6,6 +6,7 @@
 @lighterBlue: #acc8cc;
 @darkerBlue: darken(@lighterBlue, 30%);
 @satBlue: saturate(@darkerBlue, 30%);
+@unsatBlue: desaturate(@darkerBlue, 30%);
 @baseFontSize: 18px;
 @smallFontSize: 14px;
 @bigFontSize: 24px;
@@ -97,10 +98,13 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 55em;
 }
 a {
-	color: @satBlue;
+	color: @darkerBlue;
 	.transition(all, 0.25s, ease-in);
 	&:hover {
-		color: @darkerBlue;
+		color: @satBlue;
+	}
+	&:visited {
+		color: @unsatBlue;
 	}
 }
 header {
