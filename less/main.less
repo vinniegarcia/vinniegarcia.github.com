@@ -163,10 +163,11 @@ p {
 		display: block;
 	}
 	#nav-list {
-		display: none;
+		height: 0;
+		overflow: hidden;
 		.transition(all, 2s, ease-in);
 		&:target {
-			display: block;
+			height: auto;
 		}
 	}
 }
