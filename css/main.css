@@ -2,6 +2,18 @@
 
 /* Mixin */
 
+.nav-link {
+  padding: .25em 1em;
+  color: white;
+  text-decoration: none;
+  background-color: #acc8cc;
+}
+
+.nav-link:hover {
+  color: #ffc;
+  background-color: #55838a;
+}
+
 body {
   font-family: 'Open Sans', Avenir, Verdana, Geneva, sans-serif;
   font-size: 18px;
@@ -151,6 +163,14 @@ p {
   }
   #menu-link {
     display: block;
+    padding: .25em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #acc8cc;
+  }
+  #menu-link:hover {
+    color: #ffc;
+    background-color: #55838a;
   }
   #nav-list {
     height: 0;

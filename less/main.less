@@ -57,6 +57,17 @@
 	}
 }
 
+.nav-link {
+	background-color: @lighterBlue;
+	color: white;
+	text-decoration: none;
+	padding: .25em 1em;
+	&:hover {
+		background-color: @darkerBlue;
+		color: #ffc;
+	}
+}
+
 body {
 	color: @textColor;
 	background: @backgroundColor;
@@ -102,14 +113,7 @@ nav {
 	border-width: 1px 0;
 	ul {
 		a {
-			background-color: @lighterBlue;
-			color: white;
-			text-decoration: none;
-			padding: .25em 1em;
-			&:hover {
-				background-color: @darkerBlue;
-				color: #ffc;
-			}
+			.nav-link;
 		}
 		font-weight: @boldWeight;
 		list-style: none;
@@ -161,6 +165,7 @@ p {
 	}
 	#menu-link {
 		display: block;
+		.nav-link;
 	}
 	#nav-list {
 		height: 0;
