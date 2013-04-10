@@ -1,5 +1,6 @@
 url: http://www.vinniegarcia.com/
 markdown: maruku
+permalink: /:year/:month/:day/:title
 coderay:
     coderay_wrap: div
     coderay_line_numbers: inline
