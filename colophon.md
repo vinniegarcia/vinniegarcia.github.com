@@ -1,3 +1,8 @@
+---
+layout: default
+title: About this site - Vinnie Garcia
+---
+
 # About this site
 
 This site is copyright 2013 Vinnie Garcia. My words are my own and do not represent any employer or client. 
