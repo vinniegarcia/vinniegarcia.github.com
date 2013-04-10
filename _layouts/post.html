@@ -1,20 +1,10 @@
-<!doctype html>
-<html>
-<head>
-	<title>{{ title }}</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet" type="text/css">
-	<link href="/css/main.css" rel="stylesheet">
-</head>
-<body>
-	<div id="wrapper">
-		{% include header.html %}
-		{% include nav.html %}
-		<section id="main">
-			{{ content }}
-		</section>
-		{% include footer.html %}
-	</div>
-</body>
-</html>
+---
+layout: default
+---
+<article class="box">
+	<header>
+		<time datetime="{{page.date | date: "%Y-%m-%d"}}" title="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "%d.%m.%Y"}}</time>					
+		<h1><span>{{ page.title }}</span></h1>	
+	</header>
+	{{ content }}
+</article>
