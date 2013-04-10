@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome to vinniegarcia.com.
+title: Websites, mobile apps and more in South Florida - Vinnie Garcia
 ---
 
 #Welcome
