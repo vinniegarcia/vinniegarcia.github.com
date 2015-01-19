@@ -1,5 +1,7 @@
-_site/
-node_modules/
-npm-debug.log
-
 .DS_Store
+Thumbs.db
+db.json
+debug.log
+node_modules/
+public/
+.deploy/

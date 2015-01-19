@@ -1,5 +1,10 @@
 {
-  "name": "vinniegarcia.com",
-  "version": "7.0.0",
-  "private": true
+  "name": "hexo-site",
+  "version": "2.8.3",
+  "private": true,
+  "dependencies": {
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-stylus": "*",
+    "hexo-renderer-marked": "*"
+  }
 }
