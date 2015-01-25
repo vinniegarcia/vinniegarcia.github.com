@@ -99,7 +99,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Creates a responsive wrapper that makes our content scale nicely */
 .inner { position: relative; width: 80%; max-width: 700px; margin: 0 auto; }
 /* Centres vertically yo. (IE8+) */
-.vertical { display: table-cell; vertical-align: middle; background: rgba(24,24,24,0.26); }
+.vertical { display: table-cell; vertical-align: middle; }
 /* ==========================================================================
    4. General - The main styles for the the theme
    ========================================================================== */
