@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-.site-head { min-height: 420px; height: 420px; }
+.site-head { min-height: 420px; }
 button { border: none; padding: 0.6em 1.2em; background: #a9a9a9; color: #fff; font-family: Arial, sans-serif; font-size: 1em; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; display: inline-block; margin: 10px; border-radius: 2px; font-weight: 400; outline: none; }
 button { font-size: 75%; background: none; border: 1px #fff solid; }
 button:hover, button:active { background: rgba(0,0,0,0.2); }
@@ -49,13 +49,13 @@ button:hover, button:active { background: rgba(0,0,0,0.2); }
 .icon-lock::before { content: "\e60e" }
 .icon-chart-pie::before { content: "\e612" }
 /* Effect Move Down */
-.effect-movedown { background: #093f33; }
+.effect-movedown { background: #34495e; }
 .effect-movedown .container { -webkit-transition: -webkit-transform 0.4s; transition: transform 0.4s; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; }
 .effect-movedown .container::after { background: rgba(52, 73, 94, 0.5); }
 .effect-movedown.animate .container { -webkit-transform: translateY(100%) translateZ(-1500px); transform: translateY(100%) translateZ(-1500px); }
 .no-csstransforms3d .effect-movedown.animate .container { top: 75%; }
 .effect-movedown .outer-nav a { opacity: 0; -webkit-transform: translateY(-20px); transform: translateY(-20px); -webkit-transition: -webkit-transform 0.4s, opacity 0.4s; transition: transform 0.4s, opacity 0.4s; }
-.effect-movedown .outer-nav a:hover { color: rgb(226, 241, 251); }
+.effect-movedown .outer-nav a:hover { color: #fbb44f; }
 .effect-movedown.animate .outer-nav a { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
 .effect-movedown.animate .outer-nav a:nth-child(2) { -webkit-transition-delay: 0.04s; transition-delay: 0.04s; }
 .effect-movedown.animate .outer-nav a:nth-child(3) { -webkit-transition-delay: 0.08s; transition-delay: 0.08s; }
@@ -90,7 +90,7 @@ button:hover, button:active { background: rgba(0,0,0,0.2); }
 /*fonticons*/
 [class^="icon-"], [class*=" icon-"] { font-family: 'icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */
 -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.icon-Favorites:before { content: "\e600"; }.icon-logo:before { content: ""; }
+.icon-Favorites:before { content: "\e600"; }.icon-logo:before { content: "\e608"; }
 .icon-newspaper:before { content: "\e609"; }.icon-dice:before { content: "\e60a"; }
 .icon-pacman:before { content: "\e60b"; }.icon-book:before { content: "\e60c"; }
 .icon-paste:before { content: "\e60d"; }.icon-qrcode:before { content: "\e603"; }.icon-calculate:before { content: "\e60e"; }
