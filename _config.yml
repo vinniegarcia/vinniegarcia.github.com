@@ -4,7 +4,7 @@
 
 # Site
 title: vinniegarcia.com
-subtitle: Web and mobile developer in south Florida.
+subtitle: Web and mobile developer in South Florida and Silicon Valley
 description:
 author: Vinnie Garcia
 email: vg@vinniegarcia.com
@@ -12,7 +12,7 @@ language: en
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://vinniegarcia.com
+url: https://vinniegarcia.com
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags

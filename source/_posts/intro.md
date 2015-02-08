@@ -1,6 +1,8 @@
 title: Intro
 date: 2015-01-18 22:43:11
 tags:
+categories: 
+- Uncategorized
 ---
 This is my first post on hexo. I like it so far.
 <!--more-->
