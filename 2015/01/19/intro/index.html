@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Isomorphic ES6 and React Apps with Double Boiler | vinniegarcia.com</title>
+  <title>Intro | vinniegarcia.com</title>
   <meta name="description" content="Web and mobile developer in South Florida and Silicon Valley" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -64,53 +64,17 @@
 <main class="content" role="main">
   <article class="post">
     <span class="post-meta">
-      <time datetime="2015-02-08T01:36:57.000Z" itemprop="datePublished">
-          Feb 7 2015
+      <time datetime="2015-01-19T06:43:11.000Z" itemprop="datePublished">
+          Jan 19 2015
       </time>
     
-    
-    | 
-    <a href='/tags/javascript/'>javascript</a>,
-    
-    <a href='/tags/es6/'>es6</a>,
-    
-    <a href='/tags/react/'>react</a>,
-    
-    <a href='/tags/nodejs/'>nodejs</a>,
-    
-    <a href='/tags/isomorphic-applications/'>isomorphic applications</a>,
-    
-    <a href='/tags/express/'>express</a>,
-    
-    <a href='/tags/browserify/'>browserify</a>,
-    
-    <a href='/tags/grunt/'>grunt</a>,
-    
-    <a href='/tags/nodemon/'>nodemon</a>,
-    
-    <a href='/tags/6to5/'>6to5</a>,
-    
-    <a href='/tags/open-source/'>open source</a>
-    
-    
 </span>
-    <h1 class="post-title">Isomorphic ES6 and React Apps with Double Boiler</h1>
+    <h1 class="post-title">Intro</h1>
     <section class="post-content">
-      <p>I have a fun (to me at least, many would disagree) job as a full stack JavaScript developer. It’s a great time to be one, given how popular the web has gotten. Browsers are improving their JavaScript engines all the time and with Node.js, one can take the highly performant V8 engine from Chrome and run JavaScript code on the server. This can potentially speed up development by using the same language throughout your software stack. </p>
-<p>Unfortunately, the differences in JavaScript environments between your web server and your users’ web browsers can lead to duplication of code to appease the environment’s quirks. This diminishes the benefits of a unified stack. While some environment-specific code will always be required, the more code you can reuse between browser and server, the better the final product in terms of simplicity and robustness. A good design and system should help get you there and do its best to share code where possible, while allowing environment-specific tweaks when necessary.</p>
-<p>The current buzzword for JavaScript apps that run on the client and server with the same code is “isomorphic”. It’s a great design goal and one I am moving towards in my work, so I decided to build a starter boilerplate project using isomorphic principles. This project will be used as a base for other projects so I can get up and running quickly. I call it <a href="https://github.com/vinniegarcia/double-boiler" target="_blank" rel="external">Double Boiler</a> because it’s boilerplate for both the client and server environment.</p>
-<p>Double Boiler includes most of what you need to get a basic web application running within minutes. Here’s a sample of what’s included:</p>
-<ul>
-<li>LESS to compile down to CSS with less boilerplate.</li>
-<li>ES6 (the next version of JavaScript) via <a href="http://6to5.org/" target="_blank" rel="external">6to5</a>, so you can write in a future version of JavaScript and run it today.</li>
-<li><a href="http://browserify.org/" target="_blank" rel="external">Browserify</a> to bundle your client-side JavaScript code and the many amazing libraries from <a href="http://npmjs.org/" target="_blank" rel="external">NPM</a>.</li>
-<li><a href="https://facebook.github.io/react/" target="_blank" rel="external">React</a> to write your views for both client and server.</li>
-<li>The <a href="http://expressjs.com/" target="_blank" rel="external">Express</a> web framework to create server-side web apps and APIs.</li>
-<li><a href="http://gruntjs.com/" target="_blank" rel="external">Grunt</a> to build, run, and test your code as well as running other miscellaneous tasks.</li>
-<li>Watchers to automatically compile, test, and re-run your code as files change for a faster feedback loop and development workflow.</li>
-</ul>
-<p>Double Boiler is currently <a href="https://github.com/vinniegarcia/double-boiler" target="_blank" rel="external">available on GitHub</a>. It’s currently in very early stages but it’s working well for me and I’d love to get other people’s feedback on it. This is my first open source project so all criticism is welcome, but pull requests would be even better of course.</p>
-<p>In future posts I’ll go into more detail on the inner workings of Double Boiler and explain my reasons behind my decisions. Thanks for reading!</p>
+      <p>This is my first post on hexo. I like it so far.<br><a id="more"></a><br>Here’s a contrived code test:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">assignUser</span><span class="params">(req, next)</span> </span>{</div><div class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="params">(err, usr)</span> </span>{</div><div class="line">    <span class="keyword">if</span> (usr) {</div><div class="line">      req.user = usr;</div><div class="line">    }</div><div class="line">    next(err);</div><div class="line">  }</div><div class="line">}</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadUser</span><span class="params">(userId)</span> </span>{</div><div class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="params">(req, res, next)</span> </span>{</div><div class="line">    User.findById(userId, assignUser(req, next));</div><div class="line">  }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>How do I look?</p>
 
     </section>
     <footer class="post-footer">
@@ -120,15 +84,15 @@
 </section>
       <section class="share">
     <h4>Share this post</h4>
-    <a class="icon-twitter" href="http://twitter.com/share?url=https://vinniegarcia.com/2015/02/07/Isomorphic-ES6-with-Double-Boiler/"
+    <a class="icon-twitter" href="http://twitter.com/share?url=https://vinniegarcia.com/2015/01/19/intro/"
        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <span class="hidden">Twitter</span>
     </a>
-    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://vinniegarcia.com/2015/02/07/Isomorphic-ES6-with-Double-Boiler/"
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://vinniegarcia.com/2015/01/19/intro/"
        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <span class="hidden">Facebook</span>
     </a>
-    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://vinniegarcia.com/2015/02/07/Isomorphic-ES6-with-Double-Boiler/"
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://vinniegarcia.com/2015/01/19/intro/"
        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <span class="hidden">Google+</span>
     </a>
@@ -138,15 +102,11 @@
   </article>
   <nav class="pagination" role="pagination">
     
-    <a class="newer-posts" href="/2015/02/08/Double-Boiler-Routes-and-Controllers-and-Handlers-Oh-My/">
-        ← Double Boiler: Routes and Controllers and Handlers, Oh My!
+    <a class="newer-posts" href="/2015/02/07/Isomorphic-ES6-with-Double-Boiler/">
+        ← Isomorphic ES6 and React Apps with Double Boiler
     </a>
     
     <span class="icon-logo">•</span>
-    
-    <a class="older-posts" href="/2015/01/19/intro/">
-        Intro →
-    </a>
     
 </nav>
 
