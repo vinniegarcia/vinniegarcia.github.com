@@ -35,9 +35,12 @@ body {
         padding: 1rem 3rem;
 
     }
+
     body.post article {
         padding: 1rem 3rem;
     }
+
+
 }
 body.post {
     background: var(--post-background);
@@ -92,6 +95,7 @@ img.me {
     transition: all 0.3s;
     margin: auto;
     display: block;
+    max-width: 100%;
 }
 .me:hover {
     filter: grayscale(0%) blur(0px) brightness(100%);
