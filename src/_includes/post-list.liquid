@@ -1,0 +1,8 @@
+<div class="posts">
+    <h2>Stuff I Wrote Lately</h2>
+    <ul>
+        {%- for post in collections.post reversed -%}
+        <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+    </ul>
+</div>
