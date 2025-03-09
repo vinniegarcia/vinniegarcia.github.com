@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First NPM Module - Easily Convert Callbacks to Promises</title>
+  <link rel="stylesheet" href="/assets/base.css">
+</head>
+
+<body class="post">
+  <header>
+  <h1><a href="/">vinniegarcia.com</a></h1>
+</header>
+    <article>
+        <header>
+            <h1>My First NPM Module - Easily Convert Callbacks to Promises</h1>
+            <h2 class="date">2015-03-05
+        </header>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a> are coming in ES6. Think of a <code>Promise</code> as an object that represents a value that will be given to you <em>eventually</em>. You call your function and it returns a Promise, and you execute the <code>.then</code> method on the Promise, supplying a function that handles the value passed in. To handle errors, you can supply a second function to handle it in  <code>.then</code> or you can use the <code>.catch</code> method specifically. Here's a quick example, using AngularJS's <code>$http</code> object:</p>
+<pre><code class="language-javascript">// simple example, call a REST API and 
+// fetch a list of users
+$http.get('https://api.myapp.net/users')
+  .then(function (users) {
+    // when the API returns, user list will
+    // be available to the application
+    $scope.users = users;
+  })
+  .catch(function (err) {
+    console.error('ERROR: ', err);
+  });
+</code></pre>
+<p>Now, where have you seen this concept before? That's right, the callback, that hated part of JavaScript. Personally I don't think callbacks are that hard to handle, but people new to JS get wigged out by it, and I think Promises are a way to ease that anxiety. This introduces a bit of a problem: Promises are a fairly new thing (to ES6 at least; there has been a spec for a few years and library implementations like <a href="https://github.com/kriskowal/q">Kriskowal's Q</a> and <a href="https://github.com/petkaantonov/bluebird">Bluebird</a>) and not every API supports them yet. Furthermore, some environments like node.js use the callback style for any non-blocking IO operations, since callbacks are the best performing and lowest level way to do so. You can convert all of your code to Promises, but you still have to deal with external modules, libraries, and environments where callbacks reign supreme. What you need is an easy way to convert between the two. Enter <code>Proposal</code>.</p>
+<h2>Proposal</h2>
+<p>I wrote <a href="http://npmjs.com/package/proposal">Proposal</a> a few days ago. It does one thing and one thing well: converts callback-taking functions (which I'll call <code>nodebacks</code> from here on out) to <code>Promises</code>. This is great when your code is Promise-based but you have to interact with a callback-based environment. Here's an example, where we take node's <code>fs.readFile</code>, convert it into a <code>Proposal</code> object, and then execute it to return a <code>Promise</code>:</p>
+<pre><code class="language-javascript">var fs = require('fs'),
+  Proposal = require('proposal');
+
+var readProposal = Proposal(fs.readFile);
+var readPromise = readProposal('./data/users.json');
+
+readPromise
+  .then(function (file) {
+    var users = JSON.parse(file);
+    res.json(users);
+  })
+  .catch(function (err) {
+    res.status(500).send('error reading JSON file');
+  });
+</code></pre>
+<p>If you don't want an intermediate <code>Proposal</code> object and want to cut down on lines of code, you can just return a Promise directly by passing the nodeback's arguments into the <code>Proposal()</code> call. Example:</p>
+<pre><code class="language-javascript">var fs = require('fs'),
+  Proposal = require('proposal');
+
+var readPromise = Proposal(fs.readFile, './data/users.json');
+readPromise.then(...).catch(...);
+</code></pre>
+<p>Having an intermediate <code>Proposal</code> object is useful if you're going to run the same function more than once with different arguments.</p>
+<p>You can get Proposal into your apps right now with a simple <code>npm i proposal --save</code>. I hope you find it useful.</p>
+<h2>Getting to the Code</h2>
+<p>Proposal is written to deal with Promises that meet the spec, and it was mostly designed around Promises as implemented in ES6. As a matter of fact, I'm using ES6 with <a href="http://babeljs.io/">Babel</a> to transpile to ES5, but hopefully that won't be necessary in the (not-so) near future. I also use npm scripts to perform the compilation and testing before publishing to NPM, so the package as installed is only transpiled ES5 source code. To see the ES6 source, you can <a href="https://github.com/vinniegarcia/proposal">go to Github</a>, it's all there ready to go. As a matter of fact, I'll post the whole module here:</p>
+<pre><code class="language-javascript">import 'core-js/shim';
+
+//convert the err,data callback to promise resolve/reject calls
+const denode = (resolve, reject) =&gt; (err, data) =&gt; (err) ? reject(err) : resolve(data);
+
+//take a node-style function that sends an (err, result)
+//callback and turns it into a promise
+const promiseMe = (f, ...args) =&gt; new Promise((resolve, reject) =&gt; f(...args, denode(resolve, reject)));
+
+//waits for parameters before creating the Promise
+const curryWrap = (f) =&gt; (...more) =&gt; promiseMe(f, ...more);
+
+// if args given, return a promise for the operation.
+// if not, return a new function that waits for more input.
+const Proposal = (nodefn, ...args) =&gt; (args.length &gt; 0) ? promiseMe(nodefn, ...args) : curryWrap(nodefn);
+
+export default Proposal;
+</code></pre>
+<p>Yes, it's only six lines of actual code. ES6 is awesome in that regard! So far my ES6 projects have been more documentation than code, and I'm perfectly okay with that!</p>
+<h3>Open Source</h3>
+<p>This is my first NPM module, and the first module I'm releasing as open source under an MIT license. I hope to release a lot more in the future. If you have any questions on how to use it, suggestions for improvement or new features, or just want to chat about Proposal, please [email me](mailto:vinnie@coev.co?subject=Proposal module) about it, or file a github issue and I'll do my best to help out and respond.</p>
+
+    </article>
+  <footer>
+    &copy; 2003-2025 Vinnie Garcia. <a href="/how">minutia</a>
+</footer>
+</body>
+
+</html>

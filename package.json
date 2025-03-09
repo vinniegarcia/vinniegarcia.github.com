@@ -1,0 +1,27 @@
+{
+  "name": "vg",
+  "version": "1.0.0",
+  "description": "vinniegarcia.com ================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "eleventy --serve",
+    "start": "eleventy-dev-server --dir=_site",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinniegarcia/vinniegarcia.github.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinniegarcia/vinniegarcia.github.com/issues"
+  },
+  "homepage": "https://vinniegarcia.com/",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
