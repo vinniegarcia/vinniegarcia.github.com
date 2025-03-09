@@ -40,6 +40,9 @@ body {
         padding: 1rem 3rem;
     }
 
+    img.me {
+        width: 480px;
+    }
 
 }
 body.post {
@@ -95,7 +98,8 @@ img.me {
     transition: all 0.3s;
     margin: auto;
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 480px;
 }
 .me:hover {
     filter: grayscale(0%) blur(0px) brightness(100%);

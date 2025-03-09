@@ -11,4 +11,4 @@ Building software is my job (Interested in hiring me? [Here's my resume](/docs/V
 
 For me, life is about balance. It’s about weaving together all the things I care about: my work, my family, my creative pursuits, and my adventures. I don’t think any of us are defined by a single role or title. We’re a mix of everything we love, everything we create, and the people and animals we share it all with. That’s the life I’m building, and I’m grateful every day for the chance to do it.
 
-<img src="/assets/me.jpeg" width="480" alt="me" class="me">
+<img src="/assets/me.jpeg" alt="me" class="me">

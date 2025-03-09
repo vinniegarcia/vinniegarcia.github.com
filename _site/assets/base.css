@@ -21,21 +21,35 @@ html {
 body {
     background: var(--page-background);
     color: var(--text-color);
-    main {
-        padding: 1rem 3rem;
-    }
+    
 }
 @media screen and (min-width: 801px) {
     body {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
+        main {
+            padding: 1rem 3rem;
+        }
     }
+
+    body > header {
+        padding: 1rem 3rem;
+
+    }
+
+    body.post article {
+        padding: 1rem 3rem;
+    }
+
+    img.me {
+        width: 480px;
+    }
+
 }
 body.post {
     background: var(--post-background);
     article {
         margin: 0 auto;
         max-width: 55rem;
-        padding: 1rem 3rem;
         .date {
             font-size: 1.266rem;
             font-weight: 500;
@@ -71,10 +85,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-body > header {
-    padding: 1rem 3rem;
-
-}
 
 footer {
     text-align: center;
@@ -88,6 +98,8 @@ img.me {
     transition: all 0.3s;
     margin: auto;
     display: block;
+    width: 100%;
+    max-width: 480px;
 }
 .me:hover {
     filter: grayscale(0%) blur(0px) brightness(100%);
