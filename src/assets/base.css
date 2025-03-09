@@ -30,6 +30,11 @@ body {
             padding: 1rem 3rem;
         }
     }
+
+    body > header {
+        padding: 1rem 3rem;
+
+    }
     body.post article {
         padding: 1rem 3rem;
     }
@@ -74,10 +79,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-body > header {
-    padding: 1rem 3rem;
-
-}
 
 footer {
     text-align: center;
