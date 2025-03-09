@@ -9,6 +9,18 @@
     --link-background: transparent;
     --link-hover-background: var(--link-color);
 }
+
+@keyframes rainbow {
+    12.5% { background: oklch(100% 0.4 90deg); }
+    25% { background: oklch(90% 0.4 120deg); }
+    37.5% { background: oklch(80% 0.32 180deg); }
+    50% { background: oklch(70% 0.24 240deg); }
+    62.5% { background: oklch(60% 0.16 300deg); }
+    75% { background: oklch(50% 0.08 0deg); }
+    87.5% { background: oklch(40% 0.04 60deg); }
+    100% { background: var(--page-background); }
+}
+  
 /* ios dynanic type support with a sensible default */
 html {
     font-size: 0.9rem;
@@ -21,7 +33,14 @@ html {
 body {
     background: var(--page-background);
     color: var(--text-color);
-    
+}
+body.home {
+    animation: rainbow 1.5s linear;
+}
+@media (prefers-reduced-motion) {
+    body.home {
+        animation: none;
+    }
 }
 @media screen and (min-width: 801px) {
     body {
