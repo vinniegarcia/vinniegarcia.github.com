@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro</title>
+  <link rel="stylesheet" href="/assets/base.css">
+</head>
+
+<body class="post">
+  <header>
+  <h1><a href="/">vinniegarcia.com</a></h1>
+</header>
+    <article>
+        <header>
+            <h1>Intro</h1>
+            <h2 class="date">2015-01-18
+        </header>
+        <p>This is my first post on hexo. I like it so far.</p>
+<!--more-->
+<p>Here's a contrived code test:</p>
+<pre><code class="language-javascript">
+function assignUser(req, next) {
+  return function (err, usr) {
+    if (usr) {
+      req.user = usr;
+    }
+    next(err);
+  }
+}
+
+function loadUser(userId) {
+  return function (req, res, next) {
+    User.findById(userId, assignUser(req, next));
+  }
+}
+</code></pre>
+<p>How do I look?</p>
+
+    </article>
+  <footer>
+    &copy; 2003-2025 Vinnie Garcia. <a href="/how">minutia</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>vinniegarcia.com</title>
+  <subtitle>Vinnie Garcia&#39;s writings.</subtitle>
+  <link href="https://vinniegarcia.com/feed.xml" rel="self" />
+  <link href="https://vinniegarcia.com/" />
+  <updated>2025-03-09T00:00:00Z</updated>
+  <id>https://vinniegarcia.com/</id>
+  <author>
+    <name>Vinnie Garcia</name>
+  </author>
+  <entry>
+    <title>Just Start</title>
+    <link href="https://vinniegarcia.com/2025/03/09/just-start/" />
+    <updated>2025-03-09T00:00:00Z</updated>
+    <id>https://vinniegarcia.com/2025/03/09/just-start/</id>
+    <content type="html">&lt;p&gt;I often think of an idea. Then I write it down. Then I make plans to work on it. Then I don&#39;t work on it.&lt;/p&gt;
+&lt;p&gt;I made plans to work on this site for 10 years. I haven&#39;t touched it.&lt;/p&gt;
+&lt;p&gt;So let&#39;s start again.&lt;/p&gt;
+&lt;h2&gt;What is this about?&lt;/h2&gt;
+&lt;p&gt;It&#39;s about me. This used to be about my work, but that&#39;s limiting. I hope to add more than that. I do more than just my work. I want to do a good job there, but it&#39;s not the biggest or most rewrarding part of my life; that would be my family and loved ones.&lt;/p&gt;
+&lt;p&gt;I don&#39;t know if I&#39;ll keep these posts around or delete them from time to time. It doesn&#39;t really matter. I am here again and I will make this relevant for right now and for later.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

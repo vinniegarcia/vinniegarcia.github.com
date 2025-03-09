@@ -1,0 +1,20 @@
+<p>This is my first post on hexo. I like it so far.</p>
+<!--more-->
+<p>Here's a contrived code test:</p>
+<pre><code class="language-javascript">
+function assignUser(req, next) {
+  return function (err, usr) {
+    if (usr) {
+      req.user = usr;
+    }
+    next(err);
+  }
+}
+
+function loadUser(userId) {
+  return function (req, res, next) {
+    User.findById(userId, assignUser(req, next));
+  }
+}
+</code></pre>
+<p>How do I look?</p>
