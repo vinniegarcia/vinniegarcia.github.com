@@ -15,6 +15,7 @@ export default function (eleventyConfig) {
 	// Output directory: _site
     eleventyConfig.setInputDirectory("src");
 	eleventyConfig.addPassthroughCopy("src/assets/**");
+    eleventyConfig.addPassthroughCopy("src/docs/**");
     eleventyConfig.addPassthroughCopy("CNAME");
     
     eleventyConfig.addPlugin(feedPlugin, {
