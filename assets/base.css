@@ -21,13 +21,17 @@ html {
 body {
     background: var(--page-background);
     color: var(--text-color);
-    main {
-        padding: 1rem 3rem;
-    }
+    
 }
 @media screen and (min-width: 801px) {
     body {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
+        main {
+            padding: 1rem 3rem;
+        }
+    }
+    body.post article {
+        padding: 1rem 3rem;
     }
 }
 body.post {
@@ -35,7 +39,6 @@ body.post {
     article {
         margin: 0 auto;
         max-width: 55rem;
-        padding: 1rem 3rem;
         .date {
             font-size: 1.266rem;
             font-weight: 500;
